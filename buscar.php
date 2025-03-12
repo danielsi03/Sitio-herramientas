@@ -12,7 +12,7 @@ require 'navbar.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styless.css">
 </head>
 <body class="body-buscar">
 
@@ -37,8 +37,7 @@ if ($count) {
         echo '          <img src="data:image/png;base64,' . base64_encode($row['image_1']) . '"   none; alt="Imagen del producto" object-fit: cover;">';
         echo '          <div class="card-body-product">';
         echo '              <h5 class="card-name">Nombre: ' . htmlentities($row["name_product"]) . '</h5>';
-        echo '              <p class="card-text">Precio: $ ' . htmlentities($row["price"]) . '.00 MXN</p>';
-        echo '              <p class="card-text">Stock: ' . htmlentities($row["stock"]) . '</p>';
+        echo '              <h5 class="card-name">Categoria: ' . htmlentities($row["name_category"]) . '</h5>';
         echo '          </div>';
         
 

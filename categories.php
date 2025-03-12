@@ -1,5 +1,5 @@
-
 <?php
+
 require 'db_conexion.php';
 session_start();
 require 'navbar.php';
@@ -21,7 +21,7 @@ if (isset($_GET['slug'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styless.css">
     <title>My Productos</title>
 </head>
 
@@ -47,9 +47,6 @@ if (isset($_GET['slug'])) {
                 echo '    <img src="data:image_png;base64,' . base64_encode($data['image_1']) . '" class="card-img-top" alt="...">';
                 echo '    <div class="card-body-product">';
                 echo '      <h5 class="card-name">' . htmlentities($data['name_product']) . '</h5>';
-    
-                echo '      <p class="card-text">$ '.htmlentities($data['price']).'.00 MXN</p>';
-                echo '              <p>Stock: ' . htmlentities($data["stock"]) . '</p>';
                 echo '    </div>';
                 echo '    </a>';
             }
