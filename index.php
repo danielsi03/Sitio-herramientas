@@ -30,6 +30,8 @@ require 'db_conexion.php';
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a href="agregar_categoria.php">Categorias</a>
+              <a href="agregar_producto.php">Productos</a>
               <i class="fa-solid fa-bars"></i> Menu
             </a>
             <ul class="dropdown-menu custom-anchor" style="background-color: black;">
@@ -118,7 +120,7 @@ require 'db_conexion.php';
       echo '    <img src="data:image_png;base64,' . base64_encode($data['image_1']) . '"  alt="...">';
       echo '    <div class="card-body-product">';
       echo '      <h5 class="card-name">' . htmlentities($data['name_product']) . '</h5>';
-      echo '      <h5 class="card-name">' . htmlentities($data['name_category']) . '</h5>';
+      echo '      <h5 class="card-name">Categoria: ' . htmlentities($data['name_category']) . '</h5>';
       echo '    </div>';
       echo '  </a>';
     }

@@ -46,12 +46,12 @@ if (isset($_GET['slug'])) {
 
         <div class="detalles-texto">
             <h4><?php echo htmlentities($column['name_product']) ?> </h4>
-            <div class="descripcion-producto">
-                <p><b>Beneficios: </b> <?php echo htmlentities($column['beneficios']) ?></p>
-                <p><b>Aplicaciones: </b> <?php echo htmlentities($column['aplicaciones']) ?></p>
-            </div>
+        
+            <p><b>Beneficios: </b> <?php echo htmlentities($column['beneficios']) ?></p>
+            <p><b>Aplicaciones: </b> <?php echo htmlentities($column['aplicaciones']) ?></p>
+          
             <p><b>Categoria:</b> <?php echo htmlentities($column['name_category']) ?></p>
-        </div>
+       
     </div>
 </body>
 
