@@ -118,7 +118,7 @@ require 'db_conexion.php';
       echo '    <img src="data:image_png;base64,' . base64_encode($data['image_1']) . '"  alt="...">';
       echo '    <div class="card-body-product">';
       echo '      <h5 class="card-name">' . htmlentities($data['name_product']) . '</h5>';
-      echo '      <h5 class="card-name">Categoria: ' . htmlentities($data['name_category']) . '</h5>';
+      echo '      <h5 class="card-name"> ' . htmlentities($data['name_category']) . '</h5>';
       echo '    </div>';
       echo '  </a>';
     }
