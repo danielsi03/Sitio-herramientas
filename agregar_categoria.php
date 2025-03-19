@@ -1,12 +1,10 @@
 <?php
 include 'db_conexion.php';
 
-// Agregar categoría
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["add_category"])) {
     $name_category = $_POST["name_category"];
     $slug_category = $_POST["slug_category"];
 
-    // Procesar la imagen
     $image_category = file_get_contents($_FILES["image_category"]["tmp_name"]);
 
     $sql = "INSERT INTO category (name_category, image_category, slug_category) VALUES (:name, :image, :slug)";
@@ -22,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["add_category"])) {
     }
 }
 
-// Eliminar categoría
 if (isset($_GET["delete_id"])) {
     $delete_id = $_GET["delete_id"];
     $sql = "DELETE FROM category WHERE name_category = :id";

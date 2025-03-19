@@ -2,13 +2,14 @@
 
 require 'db_conexion.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>index</title>
+  <title>Mecatools</title>
   <script src="https://kit.fontawesome.com/b1473ebfe8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styless.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -33,6 +34,8 @@ require 'db_conexion.php';
               <i class="fa-solid fa-bars"></i> Menu
             </a>
             <ul class="dropdown-menu custom-anchor" style="background-color: black;">
+              <a class="dropdown-item" href="#categorias">Categorias</a>
+              <a class="dropdown-item" href="#productos">Productos</a>
               <li><a class="dropdown-item" href="#footer"><i class="fa-solid fa-user"></i> Acerca de nosotros
                 </a></li>
             </ul>
@@ -63,7 +66,7 @@ require 'db_conexion.php';
   $slides = ceil($total_items / $items_per_slide);
   ?>
 
-  <div class="title-categorias">
+  <div  id="categorias" class="title-categorias">
     <h1>Categorias</h1>
   </div>
   <div class="categoriass">
@@ -103,7 +106,7 @@ require 'db_conexion.php';
     </div>
   </div>
 
-  <div class="title-productos">
+  <div id="productos" class="title-productos">
     <h1>Productos</h1>
   </div>
 

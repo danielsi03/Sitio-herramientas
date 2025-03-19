@@ -1,8 +1,6 @@
 <?php
-require 'db_conexion.php'; // Incluye tu archivo de conexión
-require 'navbar.php'; // Incluye tu archivo de conexión
-
-// Función para generar un slug
+require 'db_conexion.php'; 
+require 'navbar.php'; 
 function generarSlug($cadena) {
     $slug = strtolower(trim($cadena));
     $slug = preg_replace('/[^a-z0-9-]+/', '-', $slug);
@@ -10,11 +8,9 @@ function generarSlug($cadena) {
     return trim($slug, '-');
 }
 
-// Obtener las categorías disponibles
 $query = $cnnPDO->query("SELECT name_category FROM category");
 $categorias = $query->fetchAll(PDO::FETCH_ASSOC);
 
-// Procesar el formulario cuando se envíe
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id_product = $_POST['id_product'] ?? null;
     $name_product = $_POST['name_product'] ?? null;

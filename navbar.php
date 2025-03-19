@@ -10,7 +10,7 @@ ob_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/b1473ebfe8.js" crossorigin="anonymous"></script>
-  <title>Halcon Store</title>
+  <title>Mecatools</title>
 </head>
 
 <body>
@@ -67,13 +67,11 @@ ob_start();
             </ul>
           </li>
 
-          <!-- Acerca de Nosotros -->
           <li class="nav-item">
             <a class="nav-link" href="main_window.php#footer">Acerca de Nosotros</a>
           </li>
         </ul>
 
-        <!-- Buscador -->
         <form class="d-flex" role="search" action="buscar.php" method="GET" id="searchForm">
           <input class="form-control me-2" type="search" name="query" id="searchBox" placeholder="Buscar" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -84,8 +82,8 @@ ob_start();
 
   <script>
     function buscarCategoria(nombreCategoria) {
-      document.getElementById("searchBox").value = nombreCategoria; // Poner la categoría en la barra de búsqueda
-      document.getElementById("searchForm").submit(); // Enviar el formulario automáticamente
+      document.getElementById("searchBox").value = nombreCategoria; 
+      document.getElementById("searchForm").submit(); 
     }
   </script>
 
