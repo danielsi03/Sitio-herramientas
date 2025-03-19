@@ -17,7 +17,7 @@ ob_start();
   <nav class="navbar navbar-expand-lg color-bg" data-bs-theme="dark">
     <div class="container-fluid">
     <a class="navbar-brand" href="index.php" style="color: rgb(255, 255, 255);">
-      <img  href="index.php" src="image/Imagen de WhatsApp 2025-03-12 a las 10.29.01_4b182467.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
+      <img  href="index.php" src="image/Imagen de WhatsApp 2025-03-12 a las 10.29.01_3bba10f1.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
       Mecatools
     </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
