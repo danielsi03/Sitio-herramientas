@@ -30,8 +30,6 @@ require 'db_conexion.php';
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <a href="agregar_categoria.php">Categorias</a>
-              <a href="agregar_producto.php">Productos</a>
               <i class="fa-solid fa-bars"></i> Menu
             </a>
             <ul class="dropdown-menu custom-anchor" style="background-color: black;">

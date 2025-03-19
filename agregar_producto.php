@@ -1,5 +1,6 @@
 <?php
 require 'db_conexion.php'; // Incluye tu archivo de conexión
+require 'navbar.php'; // Incluye tu archivo de conexión
 
 // Función para generar un slug
 function generarSlug($cadena) {
