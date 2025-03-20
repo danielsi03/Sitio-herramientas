@@ -22,7 +22,7 @@ if (isset($_GET['slug'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlentities($column['name_product']) ?></title>
-    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="body-detalles">

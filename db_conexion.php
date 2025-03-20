@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title >Halcon Store</title>
+	<title >Mecatools</title>
 	<meta charset="utf-8">
 	<!-- Icono del Sitio Web -->
-	<link rel="icon" href="images/icon utc.png">
+	<link rel="icon" href="image/Imagen de WhatsApp 2025-03-12 a las 10.29.01_3bba10f1.jpg">
 	
 </head>
 <body>

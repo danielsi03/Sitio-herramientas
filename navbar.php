@@ -1,6 +1,9 @@
 <?php
 require 'cdn.html';
 ob_start();
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -32,44 +35,33 @@ ob_start();
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Herramientas de Corte</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Fresas')">Fresas</a></li>
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Brocas')">Brocas</a></li>
+              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Fresado')">Fresas</a></li>
+              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Drill')">Brocas</a></li>
               <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Insertos')">Insertos</a></li>
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Tornos y Buriles')">Tornos y Buriles</a></li>
             </ul>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Portaherramientas</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Portafresas y Portabrocas')">Portafresas y Portabrocas</a></li>
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Mandriles y Conos')">Mandriles y Conos</a></li>
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Pinzas y Boquillas')">Pinzas y Boquillas</a></li>
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Prensas y Mordazas')">Prensas y Mordazas</a></li>
-            </ul>
-          </li>
+         
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Consumibles</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('lubricantes')">Lubricantes</a></li>
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Líquidos de Limpieza')">Líquidos de Limpieza</a></li>
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Abrasivos')">Abrasivos</a></li>
+              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('AL CUT')">Lubricantes</a></li>
+              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('.')">Refrigerantes</a></li>
+              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Disc')">Abrasivos</a></li>
             </ul>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Medición y Control</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Micrómetros y Calibradores')">Micrómetros y Calibradores</a></li>
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Relojes Comparadores')">Relojes Comparadores</a></li>
-              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Rugosímetros')">Rugosímetros</a></li>
+              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Digimatic')">Micrómetros y Calibradores</a></li>
+              <li><a class="dropdown-item" href="#" onclick="buscarCategoria('Caratula')">Relojes Comparadores</a></li>
+
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="main_window.php#footer">Acerca de Nosotros</a>
-          </li>
+         
         </ul>
 
         <form class="d-flex" role="search" action="buscar.php" method="GET" id="searchForm">
