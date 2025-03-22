@@ -26,10 +26,6 @@ if (isset($_GET['slug'])) {
 </head>
 
 <body class="body-detalles">
-    <div class="vendedor-container">
-        <div class="comentario-del-usuario">
-        </div>
-    </div>
     <div class="container-detalles">
         <div class="detalles-imagen">
             <div class="carrusel-detalles">
